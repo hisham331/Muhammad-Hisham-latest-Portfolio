@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Hisham | Full Stack Developer</title>
+<meta name="description" content="Full stack developer: React, Node.js, Express, MongoDB Atlas. Open to jobs and freelance work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="glow" id="glow"></div>
+
+<header class="nav">
+  <a href="#home" class="logo" data-t="short">MH</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#contact" class="pill">Hire me</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero wrap">
+  <div>
+    <p class="status"><i></i>Open to jobs and freelance work</p>
+    <h1 id="title"></h1>
+    <p class="role"><span id="type"></span><b class="caret"></b></p>
+    <p class="lead">BS Computer Science student (3rd semester) who builds full stack web apps with React, Node.js, Express and MongoDB Atlas. Ready to join your team and ship real features.</p>
+    <div class="cta">
+      <a class="btn" href="#contact">Hire me</a>
+      <a class="btn ghost" data-link="wa" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn ghost" data-link="github" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" data-link="cv" target="_blank" rel="noopener">Download CV</a>
+    </div>
+  </div>
+  <div class="photo">
+    <div class="ring"></div>
+    <img id="photo" alt="Portrait of Muhammad Hisham">
+    <span class="initials" id="init" hidden></span>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="about" class="wrap">
+  <h2 class="rv">About me</h2>
+  <div class="two">
+    <p class="rv big">I'm <span data-t="name"></span>, a full stack developer from <span data-t="location"></span>. I like turning a messy idea into a working product: a clean interface in front, a secure API and database behind it. My latest project is a school portal where principals, teachers and students log in, with marks, attendance, meetings and issue reports.</p>
+    <dl class="rv facts">
+      <div><dt>Studying</dt><dd>BS Computer Science, 3rd semester</dd></div>
+      <div><dt>University</dt><dd>KUST University, Kohat</dd></div>
+      <div><dt>Son of</dt><dd data-t="father"></dd></div>
+      <div><dt>Looking for</dt><dd>Junior full stack role, internship or freelance work</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <h2 class="rv">Skills</h2>
+  <div class="skills" id="skillGrid"></div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2 class="rv">Projects</h2>
+  <div class="projects" id="projectGrid"></div>
+</section>
+
+<section id="contact" class="wrap">
+  <h2 class="rv">Let's work together</h2>
+  <div class="two">
+    <div class="rv rows">
+      <a data-link="mail"><small>Email</small><span data-t="email"></span></a>
+      <a data-link="tel"><small>Call</small><span data-t="phone"></span></a>
+      <a data-link="wa" target="_blank" rel="noopener"><small>WhatsApp</small><span data-t="phone"></span></a>
+      <a data-link="linkedin" target="_blank" rel="noopener"><small>LinkedIn</small><span>Connect with me</span></a>
+    </div>
+    <form class="rv card form" id="form">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot"><span>&copy; <span id="yr"></span> <span data-t="name"></span></span><a href="#home">Back to top</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
