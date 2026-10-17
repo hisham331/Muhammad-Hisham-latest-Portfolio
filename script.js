@@ -5,7 +5,7 @@ const CONFIG = {
   name: "Muhammad Hisham",
   short: "MH",
   father: "Ikram Ullah Khan",
-  location: "Hangu, Khyber Pakhtunkhwa",
+  location: "Hangu, Khyber Pakhtunkhwa]",
   roles: ["Full Stack Developer", "React + Node.js Builder", "MongoDB Atlas Developer"],
 
   email: "xhomjo@gmail.com",      // <-- email yahan badlo
